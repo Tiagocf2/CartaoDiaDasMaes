@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Feliz dia das Maes</title>
+		<link rel="stylesheet" type="text/css" href="css.css" />
+	</head>
+	<body>
+		<div id="background"></div>
+		<div id="cover">
+			<div onclick="hide_cover()">
+				<span>10</span>
+				<span>05</span>
+				<span>clique</span>
+			</div>
+		</div>
+		<h1 id="title1" class="blink">Aperte para abrir...</h1>
+		<div id="curve-wrapper" class="w-center">
+			<div id="title2" class="hidden">
+				<span>F</span>
+				<span>e</span>
+				<span>l</span>
+				<span>i</span>
+				<span>z</span>
+				<span></span>
+				<span>D</span>
+				<span>i</span>
+				<span>a</span>
+				<span></span>
+				<span>D</span>
+				<span>a</span>
+				<span>s</span>
+				<span></span>
+				<span>M</span>
+				<span>ã</span>
+				<span>e</span>
+				<span>s</span>
+				<span>!</span>
+			</div>
+			<div id="title-underline" class="hidden"></div>
+		</div>
+
+		<div id="flyer-wrapper" class="w-center">
+			<div id="card-wrapper">
+				<div id="card-front">
+					<div class="card-page-content">
+						<div class="card-text">
+							<span>para:&nbsp;&nbsp;&nbsp;<br/>Silvinha</span>
+						</div>
+
+						<button name="btn" id="card-cover-btn" onmouseup="flip(true, this.parentElement.parentElement)"><div id="lacre"></div></button>
+					</div>
+					<div class="card-page-content hidden">
+						<div class="card-text">
+							<span style="position:absolute;top:15px;">Querida Mãe,</span><span>eu sei que você adora cartinhas então resolvi escrever. Hoje é o primeiro dia das mães que passamos separados.. é assim, longe, que a gente percebe o quanto sente falta do outro, e também percebe o </span><img name='img1' src="img/mom_2.jpeg" class="card-img"/><span>quanto se ama. Saiba que você é a melhor mãe do mundo e a mais importante pra mim!</span>
+						</div>
+						<button name="btn" class="card-prev" onmouseup="flip(false, this.parentElement.parentElement)"></button>
+					</div>
+				</div>
+				<div id="card-back">
+					<div class="card-page-content">
+						<div class="card-text" style="margin-top: -5px;">
+							<span>Eu te Amo mãe, estou com muitas saudades! Que o futuro nos aproxime denovo e que vençamos esse Corona! Você é minha parceira de luta hahah! Sabe,</span><span><img name='img2' src="img/mom_3.jpeg" class="card-img"/> mesmo que tivemos várias desavenças na nossa casinha, eu aprendi que amar não é só olhar pelo lado bom, mas aceitar os ruins também! E é por isso que eu te amo assim do seu jeitinho, senão não seria você!</span>
+						</div>
+						<button name="btn" class="card-next" onmouseup="flip(true, this.parentElement.parentElement)"></button>
+					</div>
+					<div class="card-page-content hidden">
+						<img name='img3' src="img/mom_1.jpg" class="card-img"/>
+						<div class="card-text">nossa familia</div>
+						<div class="card-text">
+							<span>de:<br/>&nbsp;&nbsp;seu filho querido</span>
+						</div>
+						<button name="btn" class="card-prev" onmouseup="flip(false, this.parentElement.parentElement)"></button>
+					</div>						
+				</div>
+			</div>
+
+			<div id="feathers">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+			<div id="spears">
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js.js">
+			
+		</script>
+	</body>
+</html>
